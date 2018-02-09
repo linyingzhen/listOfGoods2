@@ -1,2 +1,4 @@
-# listOfGoods2
-listOfGoods2
+npm install
+npm run dev
+npm run build
+
