@@ -574,8 +574,12 @@ export default {
 .cf  
   padding: .1rem 0
   border-bottom 1px solid #dddddd
+  overflow: hidden
+  span:nth-child(1)
+    float: left
   .subname
-    width: 6.2rem
+    display inline-block
+    width: 4.5rem
     font-size: .26rem
     margin-top .12rem
     line-height: 1.2
