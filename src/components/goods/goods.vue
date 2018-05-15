@@ -51,6 +51,7 @@
     </div>
     <shopCart :deliveryPrice="Number(seller.deliveryPrice)" :minPrice = "Number(seller.minPrice)" :selectFoods="selectFoods"></shopCart>
     <foodDetail :food="selectedFood" v-if="selectedFood" ref="myFood" :selectFoods="selectFoods"></foodDetail>
+    
   </div>
 
 </template>

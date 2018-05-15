@@ -12,7 +12,8 @@
     "deliveryPrice": "4",
     "ratingCount": "24",
     "sellCount": "90",
-    "bulletin": "xxx"
+    "bulletin": "xxx",
+    "shop_type":"1"
   },
   "goods": [
   {
