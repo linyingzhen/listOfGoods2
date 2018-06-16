@@ -139,7 +139,6 @@ export default {
   created() {
     this.shopType = foodsData.seller.shop_type
     this.tid = postData.tid
-    console.log(postData.tid<1)
     switch(this.shopType*1) {
       case 3:
         this.orderMode = 2
@@ -150,8 +149,6 @@ export default {
       default:
         this.orderMode = 0  
     }
-    console.log(this.shopType)
-    console.log(this.orderMode)
     this.$root.eventHub.$on('cart.add', this.drop)
   },
   computed: {
@@ -200,8 +197,6 @@ export default {
   methods: {
     changeOrderMode(number) {
       this.orderMode = number
-      console.log(this.orderMode)
-      console.log(this.orderModeIs)
       let total = 0
       this.selectFoods.forEach((food) => {
         if (food.count) {
@@ -279,9 +274,6 @@ export default {
       }
     },
     goPay() {
-
-      console.log(this.orderModeIs)
-      console.log(this.orderMode)
       if(this.orderMode == 0 && this.shopType == 1 && this.tid < 1) {
         this.orderModeIs = false
         return
@@ -315,8 +307,6 @@ export default {
           newselectFoodsArr.push(newfoodObj);
         });
 
-          console.log(newselectFoodsArr);
-          console.log(this.orderMode);
           postData.meal_type = this.orderMode;
           save_mealType();
 

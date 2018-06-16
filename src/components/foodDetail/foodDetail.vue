@@ -296,7 +296,7 @@ export default {
   background-color: #f4f4f4
   position fixed
   left .42rem
-  top 9.6rem
+  top 9rem
   text-align center
   z-index 51
   .foodsqin
@@ -330,7 +330,7 @@ export default {
 
 .detailWrapper
   width 6.67rem
-  height 9.6rem
+  height 9rem
   overflow hidden
   background-color #fff
   border-radius 5px
@@ -669,15 +669,15 @@ export default {
   white-space: nowrap;
   color #666
 .detailWrapper2
-  height 8.86rem
+  height 8rem
 .shopCart2 
-  top 8.86rem
+  top 8rem
 .cjchange
   width 6.67rem
   height .6rem
   overflow hidden
   position fixed
-  top 10.1rem
+  top 9.2rem
   left .42rem
   z-index 50
   border-radius: .2rem
